@@ -1,0 +1,12 @@
+{
+  "name": "github-actions-artifacts-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [
+    "GitHub Actions"
+  ],
+  "author": "Gregor Martynus (https://twitter.com/gr2m)",
+  "license": "ISC"
+}
