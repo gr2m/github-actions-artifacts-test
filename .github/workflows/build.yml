@@ -15,7 +15,7 @@ jobs:
 
     steps:
       - run: mkdir builds
-      - run: echo test > builds/${{ matrix.build_test_nr }}
+      - run: echo test > builds/${{ matrix.build_test_nr }}.txt
       - uses: actions/upload-artifact@v2
         with:
           name: build
