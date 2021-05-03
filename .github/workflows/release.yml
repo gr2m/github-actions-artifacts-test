@@ -1,4 +1,4 @@
-name: Build
+name: Build & Release
 
 on: workflow_dispatch
 
@@ -34,3 +34,6 @@ jobs:
           name: build-artifacts
           path: builds
       - run: ls builds
+      - run: npx semantic-release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
