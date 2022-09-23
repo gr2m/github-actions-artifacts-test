@@ -24,7 +24,7 @@ jobs:
     needs: build_matrix
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      - uses: actions/setup-node@v3
         with:
           node-version: lts/*
       - run: npm ci
